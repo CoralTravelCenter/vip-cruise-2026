@@ -1,7 +1,7 @@
 .corallium {
   position: relative;
   isolation: isolate;
-  padding: 20px 16px;
+  padding: 24px 16px;
 
   &::before {
     content: '';
@@ -20,22 +20,73 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: "Trajan Pro 3", serif;
+    font-weight: 400;
     margin: 0;
   }
 
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
   h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h3, coral-pictorial h3 {
+    font-family: "Trajan Pro 3", serif;
     font-size: 24px;
-    line-height: 28px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  coral-pictorial h3 {
+    text-transform: uppercase;
+    letter-spacing: normal;
+  }
+
+  h4, li h4 {
+    font-family: "Trajan Pro 3", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.22px;
   }
 
   p, span {
     font-family: "Manrope", sans-serif;
+    font-weight: 400;
   }
 
   p {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+  }
+
+  li p, coral-pictorial p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  > p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  span[slot="subline"] {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  button {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
   }
 
   ul {
@@ -46,6 +97,26 @@
 
   @media (min-width: 992px) {
     padding: 32px 0;
+
+    h1 {
+      font-size: 60px;
+      line-height: 69px;
+    }
+
+    h2 {
+      line-height: 32px;
+    }
+
+    h3, coral-pictorial h3 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    span[slot="subline"] {
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.8px;
+    }
   }
 }
 

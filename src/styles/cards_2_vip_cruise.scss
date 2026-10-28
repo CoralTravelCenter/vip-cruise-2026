@@ -1,11 +1,22 @@
 .cards-2-vip-cruise {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 24px;
+  width: 100%;
+  max-width: 1368px;
+
+  > li {
+    min-width: 0;
+  }
+
 }
 
 .cruise-block-cards {
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media (max-width: 991px) {
+    gap: 24px;
+  }
 }
