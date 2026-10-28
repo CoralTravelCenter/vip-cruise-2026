@@ -31,34 +31,27 @@
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
         background:
-                url("/card_images/icon_#{$i}.png") center / cover no-repeat,
-                linear-gradient(270deg, rgba(54, 133, 185, 0.50) 0.23%, rgba(4, 31, 54, 0.80) 43.93%);
+                linear-gradient(270deg, rgba(54, 133, 185, 0.50) 0.23%, rgba(4, 31, 54, 0.80) 43.93%),
+                url("/card_images/icon_#{$i}.png") center / cover no-repeat;
       }
     }
 
     @media (max-width: 520px) and (min-width: 425px) {
       &:nth-child(n) {
-        background-position: calc(100% + 60px) 100%, 0 0;
+        background-position: 0 0, calc(100% + 60px) 100%;
       }
     }
 
     @media (max-width: 424px) {
       &:nth-child(n) {
-        background-position: calc(100% + 100px) 100%, 0 0;
+        background-position: 0 0, calc(100% + 100px) 100%;
       }
     }
   }
 
   .card__text {
-    font-size: 16px;
     overflow-wrap: break-word;
     max-width: 278px;
-    line-height: 24px;
-  }
-
-  .card__title {
-    font-size: 24px;
-    line-height: 28px;
   }
 
   .embla__viewport {
