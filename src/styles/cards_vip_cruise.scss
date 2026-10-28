@@ -1,0 +1,97 @@
+.vip-cruise-section.country_slider {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  coral-button::part(control) {
+    font-size: 12px;
+    padding: 12px 32px;
+    line-height: 1;
+  }
+
+  .cards-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    border-radius: var(--corallium-radius-m, var(--coral-radius-m, 20px));
+    padding: 24px;
+    color: var(--corallium-color-text-light, var(--coral-color-text-light, #fff));
+    min-height: 250px;
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        background:
+                url("/card_images/icon_#{$i}.png") center / cover no-repeat,
+                linear-gradient(270deg, rgba(54, 133, 185, 0.50) 0.23%, rgba(4, 31, 54, 0.80) 43.93%);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      container-type: inline-size;
+      container-name: my-card;
+    }
+
+    @media (max-width: 520px) and (min-width: 425px) {
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          background-position: calc(100% + 60px) 100%, 0 0;
+        }
+      }
+    }
+
+    @media (max-width: 424px) {
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          background-position: calc(100% + 100px) 100%, 0 0;
+        }
+      }
+    }
+  }
+
+  .card__header {
+  }
+
+  .card__text {
+    font-size: 16px;
+    overflow-wrap: break-word;
+    max-width: 278px;
+    line-height: 24px;
+  }
+
+  .card__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .embla__viewport {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .embla__dots {
+    margin: auto;
+    display: none;
+    gap: 8px;
+
+    @media (max-width: 767px) {
+      display: flex;
+    }
+  }
+}
