@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "card_images/icon_1.webp": {
+      "path": "card_images/icon_1.webp",
+      "sha256": "626b916e681e8014908fafbad349c82280e3c9b59c51947733b1e6275569a1d2",
+      "size": 82128,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/icon_1.webp",
+      "managed": true
+    },
+    "card_2_images/card-2-1.webp": {
+      "path": "card_2_images/card-2-1.webp",
+      "sha256": "e51d472a03da257ed9f8b9170462ef04395c72cfbcfe502514a0facd00bb3f44",
+      "size": 152896,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_2_images/card-2-1.webp",
+      "managed": true
+    },
+    "card_images/icon_2.webp": {
+      "path": "card_images/icon_2.webp",
+      "sha256": "72e1e8914c84a2613fbe209c97244a98c492b63f7373cacb997f7989770dbcdc",
+      "size": 44858,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/icon_2.webp",
+      "managed": true
+    },
+    "card_2_images/card-2-3.webp": {
+      "path": "card_2_images/card-2-3.webp",
+      "sha256": "b68e2586b614445eca42d2537c2bc6e3bc01ffb86381db97d9d1ff8eeb631237",
+      "size": 78140,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_2_images/card-2-3.webp",
+      "managed": true
+    },
+    "card_2_images/card-2-2.webp": {
+      "path": "card_2_images/card-2-2.webp",
+      "sha256": "02480db557800eb16568d756afb4ac378bf56086d76dddcf0c2755e65210e6a7",
+      "size": 103044,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_2_images/card-2-2.webp",
+      "managed": true
+    },
+    "card_images/icon_3.webp": {
+      "path": "card_images/icon_3.webp",
+      "sha256": "ca301f5383d2877e2b598f20940cf52be6744de6c90d4cd9e52ade5e63f20ba9",
+      "size": 69964,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/icon_3.webp",
+      "managed": true
+    },
+    "card_images/icon_4.webp": {
+      "path": "card_images/icon_4.webp",
+      "sha256": "50796eb2a94a5ad45b7a7d57db30ad4d7d815b53a63a4cae215745dd15c427b0",
+      "size": 66660,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/icon_4.webp",
+      "managed": true
+    },
+    "card_images/icon_6.webp": {
+      "path": "card_images/icon_6.webp",
+      "sha256": "d2575d261bab65fd2b03c10c5204db88940c8a9ac8a9bd97f78b50827e31e942",
+      "size": 75108,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/icon_6.webp",
+      "managed": true
+    },
+    "card_images/icon_5.webp": {
+      "path": "card_images/icon_5.webp",
+      "sha256": "a1c5ebc052631b921988ad763dada3a91a0e65206cca42396740aad663b905de",
+      "size": 98418,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/icon_5.webp",
+      "managed": true
+    },
+    "kv_vip_cruise/kv_vip_cruise_mobile.webp": {
+      "path": "kv_vip_cruise/kv_vip_cruise_mobile.webp",
+      "sha256": "1aee67f81d17ab049a4054aa459d6b66db98ad64d5bceb7b496b7c97e20bdd5e",
+      "size": 239510,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/kv_vip_cruise/kv_vip_cruise_mobile.webp",
+      "managed": true
+    },
+    "kv_vip_cruise/kv_vip_cruise.webp": {
+      "path": "kv_vip_cruise/kv_vip_cruise.webp",
+      "sha256": "72f724dc39c413ee869f70962efef066d9dd48f960304054c0280b05fe4a49d8",
+      "size": 6452704,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/kv_vip_cruise/kv_vip_cruise.webp",
+      "managed": true
+    },
+    "card_images/desktop/icon_2.webp": {
+      "path": "card_images/desktop/icon_2.webp",
+      "sha256": "4659aec26e964e6e363eabe775d24259e8d92a10ae74dcceff60558642609cfc",
+      "size": 9054,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/desktop/icon_2.webp",
+      "managed": true
+    },
+    "card_images/desktop/icon_5.webp": {
+      "path": "card_images/desktop/icon_5.webp",
+      "sha256": "4149184f7fcdecadd5e0844e49a79155883d6f0767c4aa6a1bfce111a5066ae6",
+      "size": 17828,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/desktop/icon_5.webp",
+      "managed": true
+    },
+    "card_images/desktop/icon_1.webp": {
+      "path": "card_images/desktop/icon_1.webp",
+      "sha256": "a30bb8cffdc5c264edf744661d81cb351ab44153e286cd835dd3d48b5237944f",
+      "size": 12704,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/desktop/icon_1.webp",
+      "managed": true
+    },
+    "card_images/desktop/icon_3.webp": {
+      "path": "card_images/desktop/icon_3.webp",
+      "sha256": "30229c364b654fbea14151b39de4aa73ba0b2aaf9cdf95ccaec81def07edc89b",
+      "size": 10924,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/desktop/icon_3.webp",
+      "managed": true
+    },
+    "card_images/desktop/icon_4.webp": {
+      "path": "card_images/desktop/icon_4.webp",
+      "sha256": "0ec6e8a37a3984fafa484270a14f9e0b73ee82f759a879d128d21c36f35dfae1",
+      "size": 13312,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/desktop/icon_4.webp",
+      "managed": true
+    },
+    "card_images/mobile/icon_1.webp": {
+      "path": "card_images/mobile/icon_1.webp",
+      "sha256": "2ee0b8752a2cc697c06f8947df4dbfbb2a6431426273b819ec2d4e42109e2635",
+      "size": 10922,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/mobile/icon_1.webp",
+      "managed": true
+    },
+    "card_images/desktop/icon_6.webp": {
+      "path": "card_images/desktop/icon_6.webp",
+      "sha256": "47f01af2f79e34ef5c01156f4e029641504ffccf9fa2385f6c9bc1b1da3ff09b",
+      "size": 15966,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/desktop/icon_6.webp",
+      "managed": true
+    },
+    "card_images/mobile/icon_2.webp": {
+      "path": "card_images/mobile/icon_2.webp",
+      "sha256": "67b9cc7e96dbca2ebbf375d998bd05aa7cc17ed8b6963b4da13e300acaf9223c",
+      "size": 7120,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/mobile/icon_2.webp",
+      "managed": true
+    },
+    "card_images/mobile/icon_3.webp": {
+      "path": "card_images/mobile/icon_3.webp",
+      "sha256": "d2ba85716e7e16a79aa7483f226d4c404b2a1761d4f71dd66a2b33ec0466c443",
+      "size": 8616,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/mobile/icon_3.webp",
+      "managed": true
+    },
+    "card_images/mobile/icon_4.webp": {
+      "path": "card_images/mobile/icon_4.webp",
+      "sha256": "9f8bb7b23edba82b61623bdb856f7f496c2a1cc9ea08032f976862eaba631486",
+      "size": 10610,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/mobile/icon_4.webp",
+      "managed": true
+    },
+    "card_images/mobile/icon_6.webp": {
+      "path": "card_images/mobile/icon_6.webp",
+      "sha256": "797edbce5f66a8bd448490ab7ef40b41949582d6c3bafa21be4cfd18a648b0c5",
+      "size": 13262,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/mobile/icon_6.webp",
+      "managed": true
+    },
+    "card_images/mobile/icon_5.webp": {
+      "path": "card_images/mobile/icon_5.webp",
+      "sha256": "5e5d222803cf28779a416718e62d5af94eb3eacb5f361583aa19017ab77198e6",
+      "size": 14350,
+      "url": "https://b2ccdn.coral.ru/content/landing-pages/vip-cruise-2026/card_images/mobile/icon_5.webp",
+      "managed": true
+    }
+  }
+}

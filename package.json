@@ -5,10 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "b2c-landing-vite dev",
-    "build": "b2c-landing-vite build",
+    "build": "npm run build:resort-brands && b2c-landing-vite build",
     "check": "b2c-landing-vite check",
+    "build:resort-brands": "npm --prefix resort-brands run build",
+    "deploy": "b2c-landing-vite deploy",
+    "deploy:dry-run": "b2c-landing-vite deploy --dry-run",
+    "deploy:section": "b2c-landing-vite deploy --section",
+    "deploy:assets": "b2c-landing-vite deploy assets",
     "block:add": "b2c-landing-vite block:add",
-    "block:rename": "b2c-landing-vite block:rename"
+    "block:rename": "b2c-landing-vite block:rename",
+    "graphify": "graphify extract . --code-only && graphify cluster-only ."
   },
   "devDependencies": {
     "sass": "^1.101.0"
