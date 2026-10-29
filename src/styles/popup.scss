@@ -511,7 +511,6 @@
 }
 @media (min-width: 1024px) {
   .kapsula-popup { width: auto; max-height: none; border-radius: 0; padding: 0; }
-  .kapsula-popup__main { gap: 0; }
   .kapsula-popup__success { min-height: 340px; padding: 40px 68px; }
   .kapsula-popup-form__phone { grid-template-columns: 96px minmax(0, 1fr); }
 }

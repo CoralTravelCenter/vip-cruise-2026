@@ -35,7 +35,7 @@
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
         background:
-                url("/card_images/desktop/icon_#{$i}.jpg") center / cover no-repeat;
+                url("/card_images/desktop/icon_card_#{$i}.jpg") center / cover no-repeat;
       }
     }
 
@@ -43,7 +43,7 @@
       @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
           background:
-                  url("/card_images/mobile/icon_#{$i}.jpg") center / cover no-repeat;
+                  url("/card_images/mobile/icon_card_#{$i}.jpg") center / cover no-repeat;
         }
       }
     }
