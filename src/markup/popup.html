@@ -1,0 +1,184 @@
+<template id="form-template">
+    <coral-popup id="coral-popup-kapsula" class="kapsula-popup" aria-labelledby="kapsula-popup-title">
+        <div class="kapsula-popup__layout">
+            <div class="kapsula-popup__main">
+                <div class="kapsula-copy kapsula-copy--popup">
+                    <h2 class="kapsula-copy__title" id="kapsula-popup-title">Ваш сценарий<br>Нового года — готов</h2>
+                    <p class="kapsula-popup__text">
+                        Персональный менеджер подберёт отель,
+                        максимально соответствующий вашему сценарию праздника.
+                    </p>
+                </div>
+
+                <form class="kapsula-popup-form" data-kapsula-popup-form aria-describedby="kapsula-popup-submit-error"
+                      novalidate>
+                    <fieldset class="kapsula-popup-form__contact-method" data-kapsula-popup-field="contactMethod">
+                        <legend class="kapsula-popup-form__contact-method-title">Выберите удобный способ для связи:</legend>
+                        <div class="kapsula-popup-form__contact-method-options">
+                            <label class="kapsula-popup-form__contact-method-option">
+                                <input class="kapsula-popup-form__contact-method-input" type="radio"
+                                       name="contactMethod" value="call" required>
+                                <span class="kapsula-popup-form__contact-method-control" aria-hidden="true"></span>
+                                <span>Звонок</span>
+                            </label>
+                            <label class="kapsula-popup-form__contact-method-option">
+                                <input class="kapsula-popup-form__contact-method-input" type="radio"
+                                       name="contactMethod" value="max" required>
+                                <span class="kapsula-popup-form__contact-method-control" aria-hidden="true"></span>
+                                <span>Max</span>
+                            </label>
+                            <label class="kapsula-popup-form__contact-method-option">
+                                <input class="kapsula-popup-form__contact-method-input" type="radio"
+                                       name="contactMethod" value="telegram" required checked>
+                                <span class="kapsula-popup-form__contact-method-control" aria-hidden="true"></span>
+                                <span>Telegram</span>
+                            </label>
+                            <label class="kapsula-popup-form__contact-method-option">
+                                <input class="kapsula-popup-form__contact-method-input" type="radio"
+                                       name="contactMethod" value="whatsapp" required>
+                                <span class="kapsula-popup-form__contact-method-control" aria-hidden="true"></span>
+                                <span>WhatsApp</span>
+                            </label>
+                            <label class="kapsula-popup-form__contact-method-option"
+                                   data-kapsula-popup-field="email">
+                                <input class="kapsula-popup-form__contact-method-input" type="radio"
+                                       name="contactMethod" value="email" required>
+                                <span class="kapsula-popup-form__contact-method-control" aria-hidden="true"></span>
+                                <span>Email</span>
+                            </label>
+                        </div>
+                        <span class="kapsula-popup-form__error" data-field-error="contactMethod"
+                              aria-live="polite"></span>
+                    </fieldset>
+
+                    <div class="kapsula-popup-form__fields">
+                        <label class="kapsula-popup-form__field" data-kapsula-popup-field="name">
+                            <span class="sr-only">Как к вам обращаться</span>
+                            <input
+                                    class="kapsula-popup-form__input"
+                                    type="text"
+                                    name="name"
+                                    placeholder="Как мы можем к вам обращаться?"
+                                    autocomplete="name"
+                                    required
+                            >
+                            <span class="kapsula-popup-form__error" data-field-error="name" aria-live="polite"></span>
+                        </label>
+
+                        <!--
+                            Поле контакта рендерится из шаблонов ниже: телефон или
+                            почта в зависимости от выбранного способа связи.
+                            В DOM всегда живёт ровно одно поле.
+                        -->
+                        <div data-kapsula-contact-field data-kapsula-popup-field="contact"></div>
+                    </div>
+
+                    <template data-kapsula-phone-template>
+                        <label class="kapsula-popup-form__field">
+                            <span class="sr-only">Номер телефона</span>
+                            <span class="kapsula-popup-form__phone">
+                            <span class="kapsula-popup-form__prefix">+7</span>
+                            <input
+                                    class="kapsula-popup-form__input kapsula-popup-form__input--phone"
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Номер телефона"
+                                    inputmode="tel"
+                                    autocomplete="tel"
+                                    required
+                            >
+                        </span>
+                            <span class="kapsula-popup-form__error" data-field-error="phone" aria-live="polite"></span>
+                        </label>
+                    </template>
+
+                    <template data-kapsula-email-template>
+                        <label class="kapsula-popup-form__field">
+                            <span class="sr-only">Электронная почта</span>
+                            <input
+                                    class="kapsula-popup-form__input"
+                                    type="email"
+                                    name="email"
+                                    placeholder="Электронная почта"
+                                    inputmode="email"
+                                    autocomplete="email"
+                                    required
+                            >
+                            <span class="kapsula-popup-form__error" data-field-error="email" aria-live="polite"></span>
+                        </label>
+                    </template>
+
+                    <div class="kapsula-popup-form__consents">
+                        <div class="kapsula-popup-form__field kapsula-popup-form__consent">
+                            <label class="kapsula-popup-form__consent-label">
+                                <input
+                                        class="kapsula-form-option__input"
+                                        type="checkbox"
+                                        name="personalDataConsent"
+                                        required
+                                >
+                                <span class="kapsula-option-card__marker" aria-hidden="true"></span>
+                                <span class="kapsula-popup-form__consent-text">
+                                Даю согласие на обработку&nbsp;<a
+                                        href="https://cdn.coral.ru/content/doc/legal/privacy_policy_coral.pdf"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                >персональных данных</a>.
+                            </span>
+                            </label>
+                            <span
+                                    class="kapsula-popup-form__error"
+                                    data-field-error="personalDataConsent"
+                                    aria-live="polite"
+                            ></span>
+                        </div>
+
+                        <div class="kapsula-popup-form__field kapsula-popup-form__consent">
+                            <label class="kapsula-popup-form__consent-label">
+                                <input
+                                        class="kapsula-form-option__input"
+                                        type="checkbox"
+                                        name="marketingConsent"
+                                        required
+                                >
+                                <span class="kapsula-option-card__marker" aria-hidden="true"></span>
+                                <span class="kapsula-popup-form__consent-text">
+                                Даю согласие на получение&nbsp;<a
+                                        href="https://b2ccdn.coral.ru/content/doc/legal/agreement_emailing_ctcb.pdf"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                >новостей и предложений</a>.
+                            </span>
+                            </label>
+                            <span
+                                    class="kapsula-popup-form__error"
+                                    data-field-error="marketingConsent"
+                                    aria-live="polite"
+                            ></span>
+                        </div>
+                    </div>
+
+                    <coral-button trait="vivid" shape="rounded">
+                        <button class="kapsula-button kapsula-popup-form__submit" type="submit">Получить персональную
+                            подборку
+                        </button>
+                    </coral-button>
+                    <p class="kapsula-popup-form__submit-error" id="kapsula-popup-submit-error"
+                       data-kapsula-popup-submit-error role="alert" hidden></p>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="kapsula-popup__success" data-kapsula-popup-success hidden>
+            <p class="kapsula-popup__success-text">
+                Спасибо! Стилист вашего отдыха уже готовит для вас персональную подборку, которая учитывает все ваши
+                пожелания, и скоро с вами свяжется.
+            </p>
+            <a class="kapsula-button kapsula-popup__success-button" href="/">
+                На главную
+            </a>
+        </div>
+    </coral-popup>
+
+</template>
