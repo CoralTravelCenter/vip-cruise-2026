@@ -16,6 +16,7 @@ export default async function init() {
 
     return initPopupForm({
         triggerSelector: "#form-trigger",
+        endpoint: "https://postman.trip-mate.ru/cruise-manager-lead-mail",
         subject: "Заявка - круизы",
         to: "tourist.cruise@coral.ru",
     });
