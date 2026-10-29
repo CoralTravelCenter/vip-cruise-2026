@@ -1,5 +1,5 @@
 import {hostReactAppReady} from "./utils/hostReactAppReady.js";
-import {FIELD_ERRORS, instances} from "./utils/keys.js";
+import {FIELD_ERRORS, instances} from "./popup/keys.js";
 import {formatPhoneInput} from "./popup/formatPhoneInput.js";
 import {validateContact} from "./popup/validateContact.js";
 import {buildManagerLeadPayload} from "./popup/buildManagerLeadPayload.js";
@@ -7,22 +7,18 @@ import {readContact} from "./popup/readContact.js";
 
 export default async function init() {
     await hostReactAppReady();
-    const template = document.querySelector("#form-template");
-    if (!template) {return;}
-
-    document.body.append(template.content.cloneNode(true));
+    if (!document.getElementById("coral-popup-kapsula")) {
+        const template = document.querySelector("#form-template");
+        if (!template) {return;}
+        document.body.append(template.content.cloneNode(true));
+    }
     await customElements.whenDefined("coral-popup");
 
-    const popup = document.querySelector("#coral-popup-kapsula");
-    const button = document.querySelector("#form-trigger");
-
-    if (button && popup) {
-        button.addEventListener("click", () => {
-            popup.show();
-        })
-    }
-
-    initPopupForm();
+    return initPopupForm({
+        triggerSelector: "#form-trigger",
+        subject: "Заявка - круизы",
+        to: "tourist.cruise@coral.ru",
+    });
 
     /** Инициализировать после вставки popup.html и регистрации coral-popup. */
     function initPopupForm({

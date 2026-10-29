@@ -1,4 +1,4 @@
-// Полностью локальные токены; внешний шрифт не загружается.
+// Шрифт заголовка подключён в global.scss.
 .kapsula-popup {
   --kapsula-black: #000000;
   --kapsula-black-015: rgba(0, 0, 0, 0.15);
@@ -13,7 +13,7 @@
   --kapsula-gold: #077dad;
   --kapsula-gold-active: #7E6635;
   --kapsula-gold-strong: #957941;
-  --kapsula-heading-font: Georgia, serif;
+  --kapsula-heading-font: "Trajan Pro 3", serif;
   --kapsula-line-height-body: 1.3;
   --kapsula-line-height-card: 1.35;
   --kapsula-line-height-popup-text: 24px;
@@ -169,6 +169,7 @@
 }
 
 .kapsula-copy--popup .kapsula-copy__title {
+  font-family: var(--kapsula-heading-font);
   margin: 0 auto 12px;
   color: var(--kapsula-black);
   font-size: var(--kapsula-font-size-4xl);

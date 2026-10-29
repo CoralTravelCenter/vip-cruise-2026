@@ -1,4 +1,4 @@
-import {CONTACT_METHODS, EMAIL_PATTERN, FIELD_ERRORS} from "../utils/keys.js";
+import {CONTACT_METHODS, EMAIL_PATTERN, FIELD_ERRORS} from "./keys.js";
 
 export function validateContact(contact) {
     const errors = {};
