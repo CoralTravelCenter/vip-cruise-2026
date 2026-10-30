@@ -1,0 +1,377 @@
+
+<style>
+    .coral-toggle {
+        background-color: #fff;
+        border-radius: 20px;
+        flex-direction: column;
+        height: max-content;
+        display: flex
+    }
+
+    .coral--faq .coral-toggle + .coral-toggle {
+        margin-top: 16px;
+    }
+
+    .coral-toggle__header {
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px;
+        display: flex
+    }
+
+    .coral-toggle__header p {
+        color: inherit;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px
+    }
+
+    .coral-toggle__header svg {
+        flex-shrink: 0;
+        margin-left: 8px;
+        transition: transform .3s
+    }
+
+    .coral-toggle__body {
+        max-height: 0;
+        margin-left: 32px;
+        margin-right: 32px;
+        list-style: none;
+        transition: max-height .3s;
+        overflow: hidden
+    }
+
+    .coral-toggle__body li + li {
+        margin-top: 8px
+    }
+
+    .coral-toggle.active .coral-toggle__header svg {
+        transform: rotate(180deg)
+    }
+
+    .coral-toggle.active .coral-toggle__body {
+        margin-bottom: 32px
+    }
+
+    ul {margin-left: 30px;}
+</style>
+
+<section class="coral coral--faq" id="anchor-7">
+    <article>
+        <div class="wrapper">
+            <h2 class="title-3 mb-16">
+                Вопросы и ответы по отдыху
+            </h2><br>
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Чем премиальные и люксовые круизы отличаются от обычных?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Люксовые круизы предлагают особую атмосферу приватности, исключительный уровень сервиса и повышенное внимание к каждому гостю.
+                        Просторные сьюты, гастрономические рестораны, персонализированное обслуживание, тщательно разработанные маршруты и небольшое количество пассажиров на многих судах делают путешествие по-настоящему особенным.
+                    </p>
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Что входит в стоимость люксового круиза?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Наполнение зависит от круизной компании, выбранного лайнера и категории размещения.
+                        Многие люксовые круизы предусматривают расширенный пакет услуг: изысканное питание, напитки премиальных брендов, обслуживание сьютов, чаевые, Wi-Fi и отдельные береговые экскурсии.
+                        В некоторых программах дополнительно включены трансферы, авиаперелеты и услуги персонального дворецкого.
+                    </p>
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Почему стоимость круизов на разных лайнерах значительно отличается?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Стоимость определяется не только продолжительностью и маршрутом, но и уровнем обслуживания, размером судна, категорией сьюта и набором включенных услуг.
+                        Камерные люксовые лайнеры и экспедиционные суда предлагают особый формат путешествий, который может включать эксклюзивные стоянки, расширенный сервис и доступ к труднодоступным направлениям.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Можно ли изменить маршрут или программу круиза?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Маршрут и расписание группового круиза устанавливаются круизной компанией, поэтому индивидуальное изменение портов захода и дат невозможно.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Что такое экспедиционный круиз и насколько он комфортен?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Экспедиционный круиз — это путешествие в уникальные и зачастую труднодоступные уголки планеты: Антарктиду, Арктику, Галапагосские острова, отдалённые архипелаги и другие необычные направления.
+                        Современные экспедиционные суда могут сочетать высокий уровень комфорта с возможностями для настоящих открытий: высадками на берег, наблюдением за дикой природой и экскурсиями в сопровождении опытных специалистов.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Нужно ли заранее бронировать люксовые и экспедиционные круизы?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Да, особенно если вы рассматриваете редкие маршруты, популярные даты или размещение в определённой категории сьютов.
+                        На камерных судах количество кают ограничено, а некоторые экспедиционные маршруты выполняются лишь несколько раз в году.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Подходят ли люксовые круизы для первого морского путешествия?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Да, подходят. Премиальный круиз – отличный способ впервые познакомиться с морем. Вас ждет высокий уровень сервиса и комфортные условия. А еще можно посетить несколько направлений без постоянной смены отелей – это очень удобно.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Можно ли отправиться в круиз с детьми?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Возможность путешествия с детьми зависит от правил конкретной круизной компании, судна и маршрута.
+                        Некоторые люксовые лайнеры принимают семьи с детьми, а отдельные экспедиционные программы предусматривают возрастные ограничения.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Возможна ли морская болезнь во время круиза?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Современные круизные лайнеры оснащаются системами стабилизации, которые помогают уменьшить качку.
+                        При этом морские условия зависят от региона, сезона и погодных обстоятельств. Если вы чувствительны к качке, наши специалисты помогут выбрать подходящий маршрут, судно и расположение каюты.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Можно ли организовать приватные экскурсии во время круиза?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Да, можно. Во многих портах захода мы можем предложить индивидуальные экскурсии с персональным гидом, комфортным транспортом и программой, составленной с учётом ваших интересов.
+                        Организация таких услуг зависит от расписания стоянок, местных условий и возможностей конкретного маршрута.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Какие категории кают доступны на круизных лайнерах?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Категории размещения зависят от круизной компании и конкретного судна.
+                        На лайнерах могут быть представлены внутренние каюты, каюты с окном, с балконом, просторные сьюты и эксклюзивные резиденции с отдельными зонами отдыха.
+                        На некоторых люксовых судах предусмотрено исключительно размещение в сьютах, а отдельные категории предлагают просторные террасы, персональное обслуживание и дополнительные привилегии.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Почему стоимость кают на одном лайнере может значительно отличаться?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Даже в рамках одного круиза стоимость размещения может существенно различаться.
+                        На цену влияют площадь каюты, расположение на палубе, наличие балкона или террасы, панорамный вид, уровень приватности и дополнительные услуги.
+                        Гостям сьютов повышенных категорий могут предоставляться персональный дворецкий, приоритетная посадка, доступ в приватные зоны, эксклюзивные рестораны и другие привилегии.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Включены ли портовые сборы и налоги в стоимость круиза?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Условия зависят от круизной компании и конкретного предложения.
+                        В одних программах портовые сборы и обязательные налоги уже включены в опубликованную стоимость, в других они могут указываться отдельно.
+                        Перед подтверждением бронирования мы предоставим подробный расчёт с указанием обязательных платежей и дополнительных расходов.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Указана ли стоимость круиза за одного человека или за всю каюту?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Как правило, стоимость круиза указывается за одного человека при двухместном размещении в каюте выбранной категории.
+                        При одноместном размещении стоимость может быть выше, поскольку круизные компании нередко применяют специальную доплату за индивидуальное использование каюты.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Можно ли выбрать конкретную каюту и её расположение на лайнере?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Да, если такая возможность предусмотрена выбранным тарифом и круизной компанией.
+                        При бронировании можно рассмотреть предпочтительную палубу, расположение относительно лифтов и общественных пространств, а также особенности планировки и вида из окна или с балкона.
+                        Некоторые тарифы предусматривают назначение номера каюты круизной компанией ближе к отправлению.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="coral-toggle js-toggle">
+                <div class="coral-toggle__header js-toggle-header">
+                    <h3 class="title-5">Какие дополнительные расходы могут возникнуть во время круиза?</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#0E2855" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="coral-toggle__body js-toggle-body">
+                    <p class="text">
+                        Даже в путешествиях высокого класса некоторые услуги могут оплачиваться отдельно.
+                        В зависимости от круизной компании это могут быть определённые береговые экскурсии, эксклюзивные напитки, процедуры в центре красоты и здоровья, услуги прачечной, специализированные рестораны и персональные мероприятия.
+                        Также следует учитывать авиаперелёты, визы, страхование и трансферы, если они не включены в программу.
+                    </p>
+
+                </div>
+            </div>
+
+        </div><strong>
+    </strong>
+    </article><strong>
+</strong>
+</section><div><strong>
+    <script>
+        async function hostReactAppReady(
+            selector = "#__next > div",
+            timeout = 500,
+        ) {
+            return new Promise((resolve) => {
+                const waiter = () => {
+                    const host_el = document.querySelector(selector);
+                    if (host_el?.getBoundingClientRect().height) {
+                        resolve();
+                    } else {
+                        setTimeout(waiter, timeout);
+                    }
+                };
+                waiter();
+            });
+        }
+
+        hostReactAppReady().then(() => {
+            const toggles = document.querySelectorAll(".js-toggle");
+
+            toggles.forEach(toggle => {
+                const header = toggle.querySelector(".js-toggle-header");
+                const body = toggle.querySelector(".js-toggle-body");
+
+                header.addEventListener("click", () => {
+                    const isOpen = toggle.classList.contains("active");
+
+                    if (isOpen) {
+                        closeAccordion(toggle, body);
+                    } else {
+                        openAccordion(toggle, body);
+                    }
+                });
+            });
+
+            function openAccordion(container, body) {
+                container.classList.add("active");
+                body.style.maxHeight = body.scrollHeight + "px";
+            }
+
+            function closeAccordion(container, body) {
+                container.classList.remove("active");
+                body.style.maxHeight = 0;
+            }
+        });
+    </script>
+</strong>
+</div>
